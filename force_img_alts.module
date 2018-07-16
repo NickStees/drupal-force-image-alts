@@ -1,0 +1,13 @@
+<?php
+/**
+*  Module is adding javascript to page
+*/
+function force_img_alts_init(){
+  global $user;
+  if(isset($user)){
+    if($user->uid){
+      // if user is logged in add js
+      drupal_add_js(drupal_get_path('module', 'force_img_alts') . '/js/forceimgalts.js');
+    }
+  }
+}

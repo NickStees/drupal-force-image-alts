@@ -1,0 +1,7 @@
+name = Force Img Alts
+description = Force all drupal img fields to have alt inputs required (javascript)
+core = 7.x
+package = Custom
+files[] = force_img_alts.module
+
+dependencies[] = jquery_update
